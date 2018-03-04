@@ -7,3 +7,8 @@ class CompanySerializer(serializers.ModelSerializer):
         model = models.Company
         fields = ('id', 'code')
 
+class PalletSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Pallet
+        fields = ('id', 'code')
+

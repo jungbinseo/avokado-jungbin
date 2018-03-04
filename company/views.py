@@ -13,3 +13,11 @@ class CompanyListCreateView(generics.ListCreateAPIView):
 class CompanyRetrieveView(generics.RetrieveUpdateDestroyAPIView):   
     serializer_class = serializers.CompanySerializer
     queryset = models.Company.objects.all()
+    
+class PalletListCreateView(generics.ListCreateAPIView):   
+    serializer_class = serializers.PalletSerializer
+    queryset = models.Pallet.objects.all()
+    
+class PalletRetrieveView(generics.RetrieveUpdateDestroyAPIView):   
+    serializer_class = serializers.PalletSerializer
+    queryset = models.Pallet.objects.all()
